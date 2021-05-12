@@ -1,4 +1,3 @@
-import { StrictMode } from "react";
 import {createStore} from "redux";
 
 const ADD = "ADD";
@@ -14,7 +13,7 @@ const addToDo = (text) => {
 const deleteToDo = id => {
   return {
     type:DELETE,
-    id
+    id: parseInt(id)
   };
 };
 
